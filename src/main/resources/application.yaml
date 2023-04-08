@@ -1,0 +1,6 @@
+server:
+  port: 8088
+elasticjob:
+  zookeeper:
+    namespace: springboot-elasticjob
+    server-list: localhost:2181
