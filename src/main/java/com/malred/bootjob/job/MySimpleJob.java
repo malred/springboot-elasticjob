@@ -7,12 +7,12 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 @Slf4j
-@ElasticSimpleJob(
-        jobName = "mySimpleJob",
-        cron = "0/10 * * * * ?",
-        shardingTotalCount = 2,
-        overwrite = true
-)
+//@ElasticSimpleJob(
+//        jobName = "mySimpleJob",
+//        cron = "0/10 * * * * ?",
+//        shardingTotalCount = 2,
+//        overwrite = true
+//)
 @Component
 public class MySimpleJob implements SimpleJob {
     @Override

@@ -1,4 +1,5 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
   com.malred.autoconfig.ZookeeperAutoConfig,\
   com.malred.autoconfig.ZookeeperProperties,\
-  com.malred.autoconfig.SimpleJobAutoConfig
+  com.malred.autoconfig.SimpleJobAutoConfig,\
+  com.malred.autoconfig.DataflowJobAutoConfig
