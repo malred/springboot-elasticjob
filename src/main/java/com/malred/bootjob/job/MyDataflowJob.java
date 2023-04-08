@@ -52,12 +52,12 @@ public class MyDataflowJob implements DataflowJob<Integer> {
             }
         }
         try {
-            Thread.sleep(3000);
+            Thread.sleep(1000);
         } catch (Exception e) {
             e.printStackTrace();
         }
         log.info("分片项: " + shardingContext.getShardingItem() + ".当前数据: " + rtnList);
-        return null;
+        return rtnList;
     }
 
     @Override
@@ -65,7 +65,7 @@ public class MyDataflowJob implements DataflowJob<Integer> {
         // 从原来的list里去掉
         list.removeAll(data);
         try {
-            Thread.sleep(3000);
+            Thread.sleep(1000);
         } catch (Exception e) {
             e.printStackTrace();
         }
